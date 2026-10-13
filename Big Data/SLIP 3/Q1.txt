@@ -1,0 +1,12 @@
+a. Create a new directory called data in HDFS.
+-> hdfs dfs -mkdir -p /data
+
+b. Upload a file called sample.txt from the local file system to the data directory in HDFS
+-> hdfs dfs -put sample.txt /data/
+
+c. Delete the sample_copy.txt file.
+-> hdfs dfs -rm /data/sample_copy.txt
+
+d. List the directory contents in HDFS
+-> hdfs dfs -ls /data
+

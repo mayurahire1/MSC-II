@@ -1,0 +1,15 @@
+// Command to start hadoop
+-> sh /home/cslogin/test/start_hadoop.sh
+
+a. Create a new directory called data in HDFS.
+-> hdfs dfs -mkdir -p /user/data
+
+b. Upload a file called sample.txt from the local file system to the data directory in HDFS.
+-> hdfs dfs -put sample.txt /user/data/
+
+c. List the files in the data directory.
+-> hdfs dfs -ls /user/data
+
+d. Move the file sample.txt to another directory in HDFS.
+-> hdfs dfs -cp /user/data/sample.txt /user/data/sample_copy.txt
+
