@@ -20,14 +20,16 @@
 
 4. Load data from local storage in the path
 ->  
+    LOAD DATA LOCAL INPATH 'UData_male.txt'
+    INTO TABLE UserData
+    PARTITION (gender='male');
 
-5. Create the same table for UserData partitioned on gender
--> 
-    
+    LOAD DATA LOCAL INPATH UData_female.txt
+    INTO TABLE UserData
+    PARTITION (gender='female');
 
 6. Find number of users for each age
 ->
     SELECT age, COUNT(*)
     FROM UserData
-    GROUP BY age
-    ORDER BY age;
+    GROUP BY age;

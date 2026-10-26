@@ -21,7 +21,7 @@ c. Create a table UserData with the fields (uid, name, age, gender, occupation, 
     FIELDS TERMINATED BY ',';
 
 d. Load data from local storage in the path
-->  LOAD DATA LOCAL INPATH '/UData.txt' INTO TABLE UserData;
+->  LOAD DATA LOCAL INPATH 'UData.txt' INTO TABLE UserData;
 
 f. Find number of users for each age
 ->
