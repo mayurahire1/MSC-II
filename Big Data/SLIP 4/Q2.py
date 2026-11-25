@@ -7,8 +7,7 @@ class MRFriendsCounter(MRJob):
     def mapper(self, key, line):
         (userID, name, age, friends) = line.split(",")
 
-        if userID.isdigit():
-            yield userID, int(friends)
+        yield userID, int(friends)
 
     def reducer(self, userID, friends_values):
         total = 0
