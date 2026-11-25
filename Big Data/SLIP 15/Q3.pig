@@ -10,8 +10,7 @@ b. Write a pig script to group the above relation by age.
     DUMP age_group;
 
 c. Write a pig script to display all employees of ComputerDepartment.
-->
-
+->  
 
 d. Write a pig script do display class wise number of students.
 ->

@@ -1,5 +1,8 @@
 # # 2. Consider the Friends Data set. Write a Map Reduce program to find agewise number of friends sorted on age.
 
+
+# // Issue in the program
+
 # from mrjob.job import MRJob
 
 # class MRFriendsByAge(MRJob):

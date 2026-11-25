@@ -10,5 +10,3 @@ c. Copy data.csv to a new directory called datadir.
 
 d. Verify the file contents in datadir.
 -> hdfs dfs -cat /data/datadir/data.csv
-
-

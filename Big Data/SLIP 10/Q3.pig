@@ -1,7 +1,6 @@
 // Command to start pig
 -> pig -x local
 
-
 a. Load a file “employee.csv”.
 -> 
     emp = LOAD 'employee.csv' USING PigStorage(',')

@@ -20,7 +20,7 @@ d. Display the votes and score of the movie“Bhoot”
 ->
     bhoot = FILTER movies BY M_title == 'Bhoot';
     result_bhoot = FOREACH bhoot GENERATE Votes, score;
-    DUMP result_bho
+    DUMP result_bhoot
 
 e. Group Movie relation by votes
 ->
